@@ -1,0 +1,15 @@
+{
+  "name": "verkefni",
+  "version": "1.0.0",
+  "description": "blabla",
+  "main": "calc.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
