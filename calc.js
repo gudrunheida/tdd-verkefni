@@ -2,8 +2,14 @@ function add(number) {
     if (number == "")
         return 0;
 
-    if (number.includes(",")) {
-        var numberArray = number.split(",");
+    var delimiter = ","
+    if (number.startsWith("//")) {
+        delimiter = number[2]
+        number = number.split("\n")[1]
+    }
+
+    if (number.includes(delimiter)) {
+        var numberArray = number.split(delimiter);
         var total = 0;
         var negativeNumbers = []
         for (var i = 0; i < numberArray.length; i++) {

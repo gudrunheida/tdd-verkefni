@@ -23,3 +23,7 @@ it("should be able to throw an error and print out a negative number", () => {
 it("should ingnore numbers over 1000", () => {
     expect(add('4,1001')).toBe(4);
 });
+
+it("accepts different delimiter", () => {
+    expect(add('//;\n1;2')).toBe(3);
+});
