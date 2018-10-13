@@ -19,3 +19,7 @@ it('Should return sumerize multiple numbers', () => {
 it("should be able to throw an error and print out a negative number", () => {
     expect(add('2,-8,-9')).toBe("Negative numbers not allowed: -8 -9");
 });
+
+it("should ingnore numbers over 1000", () => {
+    expect(add('4,1001')).toBe(4);
+});

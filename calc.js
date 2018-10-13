@@ -7,11 +7,14 @@ function add(number) {
         var total = 0;
         var negativeNumbers = []
         for (var i = 0; i < numberArray.length; i++) {
-            if (numberArray[i] < 0) {
+            if (parseInt(numberArray[i]) < 0) {
                 negativeNumbers.push(numberArray[i])
             }
-            total += parseInt(numberArray[i]);
+            if (parseInt(numberArray[i]) < 1000) {
+                total += parseInt(numberArray[i]);
+            }
         }
+
         if (negativeNumbers.length !== 0) {
             var returnStr = "Negative numbers not allowed:";
             for (var j = 0; j < negativeNumbers.length; j++) {
